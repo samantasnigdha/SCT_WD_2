@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Noto+Serif+Hentaigana:wght@200..900&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Smooch Sans", serif;
+    text-transform: uppercase;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e2e;
+}
+
+.container {
+    width: 40%;
+    min-width: 500px;
+    background: #1c0259;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    text-align: center;
+}
+
+.heading {
+    color: white;
+    font-family: "Bebas Neue", serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 179, 255);
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.timer-display {
+    width: 100%;
+    background: #fefefe;
+    padding: 40px 0;
+    font-size: 3rem;
+    color: black;
+    border-radius: 10px 10px 0 0;
+}
+
+.laps {
+    list-style: none;
+    color: white;
+    margin-top: 20px;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.laps li {
+    background: rgba(114, 203, 255, 0.2);
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.action {
+    width: 85%;
+    margin: 40px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.action button {
+    padding: 12px 15px;
+    background: #70ecfc;
+    color: #141313;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.action button:hover {
+    background: #96a3fb;
+}
+
+.action button:active {
+    transform: scale(0.95);
+}
